@@ -16,6 +16,10 @@ enterpriseops.db
 #用户上传数据
 uploads/
 
-#不想公开
+# 本地临时文件不上传
 /START_HERE.md
 /LEARNING_CHECKLIST.md
+
+# Python虚拟环境
+venv/
+.venv/
