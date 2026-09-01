@@ -11,7 +11,10 @@ EnterpriseOps Copilot 是一个面向企业内部知识问答与 IT 工单场景
 ---
 ## Demo
 
-![EnterpriseOps Copilot Web Demo](docs/demo.png)
+![Agent](docs/agent.png)
+![GetAnswer](docs/getanswer.png)
+![Document](docs/document.png)
+![Tickets](docs/tickets.png)
 
 ## 系统架构
 
