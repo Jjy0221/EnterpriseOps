@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnterpriseOps Copilot</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav>
+        <button class="tab-btn active" data-tab="chat">💬 知识问答</button>
+        <button class="tab-btn" data-tab="agent">🤖 Agent 对话</button>
+        <button class="tab-btn" data-tab="document">📄 文档上传</button>
+        <button class="tab-btn" data-tab="ticket">🎫 工单管理</button>
+    </nav>
+
+    <main>
+        <!-- 知识问答面板 -->
+        <section id="chat-panel" class="panel active">
+            <div class="panel-header">
+                <span class="panel-title">💬 知识问答</span>
+                <button id="chat-clear" class="clear-btn">清空记录</button>
+            </div>
+            <div class="chat-container">
+                <div class="message user-message">欢迎使用知识问答系统！请输入您的问题。</div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="chat-input" placeholder="输入问题...">
+                <button id="chat-send">发送</button>
+            </div>
+        </section>
+
+        <!-- Agent 对话面板 -->
+        <section id="agent-panel" class="panel">
+            <div class="panel-header">
+                <span class="panel-title">🤖 Agent 对话</span>
+                <button id="agent-clear" class="clear-btn">清空记录</button>
+            </div>
+            <div class="chat-container">
+                <div class="message user-message">欢迎使用 Agent 对话系统！请输入您的消息。</div>
+            </div>
+            <div class="input-area">
+                <input type="text" id="agent-input" placeholder="输入消息...">
+                <button id="agent-send">发送</button>
+            </div>
+        </section>
+
+        <!-- 文档上传面板 -->
+        <section id="document-panel" class="panel">
+            <div class="upload-area">
+                <input type="file" id="document-upload" accept=".txt,.pdf">
+                <button id="upload-btn">上传文档</button>
+            </div>
+            <div id="upload-result"></div>
+        </section>
+
+        <!-- 工单管理面板 -->
+        <section id="ticket-panel" class="panel">
+            <div class="ticket-create">
+                <h3>创建工单</h3>
+                <input type="text" id="ticket-title" placeholder="工单标题">
+                <textarea id="ticket-description" placeholder="工单描述"></textarea>
+                <button id="create-ticket">创建工单</button>
+            </div>
+            <div class="ticket-query">
+                <h3>查询工单</h3>
+                <input type="text" id="ticket-id" placeholder="工单ID">
+                <button id="query-ticket">查询工单</button>
+                <div id="ticket-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+</body>
+</html>

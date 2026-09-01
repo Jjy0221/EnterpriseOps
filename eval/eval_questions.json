@@ -1,0 +1,34 @@
+[
+  {
+    "question": "员工连续输错几次密码会被锁定？",
+    "expected_text": "连续输错密码 5 次"
+  },
+  {
+    "question": "P1 工单要求多久首次响应？",
+    "expected_text": "P1 工单要求 15 分钟内首次响应"
+  },
+  {
+    "question": "Windows 的 VPN 客户端最低版本是多少？",
+    "expected_text": "Windows 终端使用 5.3 及以上版本"
+  },
+  {
+    "question": "生产数据库默认允许普通员工直接访问吗？",
+    "expected_text": "生产数据库默认不向普通员工开放直接访问权限"
+  },
+  {
+    "question": "服务器磁盘使用率达到多少会触发预警？",
+    "expected_text": "磁盘使用率达到 80% 时触发预警"
+  },
+  {
+    "question": "普通应用日志默认在线保留多少天？",
+    "expected_text": "普通应用日志默认在线保留 30 天"
+  },
+  {
+    "question": "原手机丢失导致 MFA 无法使用时应该怎么办？",
+    "expected_text": "联系服务台进行身份核验后重置 MFA"
+  },
+  {
+    "question": "用户长时间不回复工单时可以怎么处理？",
+    "expected_text": "可按“用户未响应”关闭"
+  }
+]
